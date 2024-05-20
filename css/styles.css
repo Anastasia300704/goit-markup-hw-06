@@ -31,6 +31,22 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 736px;
+    }
+}
+
+@media screen and (min-width:1168px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 /*===========HEDER=============*/
 .header {
         border-bottom: 1px solid #e7e9fc;
@@ -45,6 +61,13 @@ button {
     align-items: center;
 }
 
+  @media screen and (min-width:768px) {
+
+      .container-header {
+          padding-top: 0;
+          padding-bottom: 0;
+      }
+    }
 
 .navigation {
     display: flex;
@@ -64,6 +87,12 @@ button {
     margin-right: 76px;
 }
 
+@media screen and (min-width:1158px) {
+
+    .logo {
+        margin-right: 76px;
+    }
+}
 
 .text-color {
     color: #2e2f42;
@@ -149,13 +178,52 @@ max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
+}
+
+@media screen and (max-width:767px) and (min-resolution: 2dppx),
+(min-resolution: 192dpi),
+(webkit-min-device-pixel-ratio: 2) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-ob@2x.jpg);
+    }
 }
 
 .hero-container {
 margin-left: auto;
 margin-right: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .hero-container {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+    }
+
+    @media screen and (max-width:1199px) and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (webkit-min-device-pixel-ratio: 2) {
+        .section-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab@2x.jpg);
+        }
+    }
+
+        @media screen and (min-width:1200px) {
+            .hero-container {
+                max-width: 1440px;
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+            }
+    
+            @media screen and (min-resolution: 2dppx),
+            (min-resolution: 192dpi),
+            (webkit-min-device-pixel-ratio: 2) {
+                .section-hero {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop@2x.jpg);
+                }
+            }
+}
+}
+
 .main-title {
     max-width: 496px;
         font-weight: 700;
@@ -192,44 +260,6 @@ display: block;
     background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
-    .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
-        padding: 112px 0;
-        max-width: 768px;
-    }
-
-    .section-hero .main-title {
-        font-size: 56px;
-        line-height: 1.07143;
-        width: 496px;
-    }
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab@2x.jpg);
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        padding: 188px 0;
-        max-width: 1440px;
-    }
-
-    .section-hero .btn-order-service:hover,
-    .section-hero .btn-order-service:focus {
-        background-color: #404BBF;
-    }
-}
-
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-    .section-hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop@2x.jpg);
-    }
-}
 /*==============SECTION 2=========*/
 .section-second {
  padding: 120px 0;
@@ -252,23 +282,6 @@ display: block;
 .benefits-list {
     display: flex;
     gap: 24px;
-}
-
-@media screen and (min-width: 768px) {
-    .benefits-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .benefits-list {
-        gap: 24px;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
 }
 
 .benefits-list-items {
@@ -328,24 +341,6 @@ padding-bottom: 32px;
 .team-list {
 display: flex;
     gap: 24px;
-}
-
-@media screen and (min-width: 768px) {
-    .team-list {
-        gap: 24px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .team-list {
-        gap: 24;
-        flex-direction: row;
-        flex-wrap: nowrap;
-
-    }
 }
 
 .team-list-items {
@@ -428,23 +423,6 @@ background-color: #FFFFFF;
     gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-    .portfolio-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-        row-gap: 72px;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .portfolio-img-text {
-        display: block;
-    }
 }
 
 .portfolio-list-items {
@@ -646,19 +624,6 @@ max-width: 264px;
     margin-left: 16px;
 }
 
-@media screen and (min-width: 768px) {
-    .container-bottom {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-        row-gap: 72px;
-        padding: 96px 0;
-        padding-left: 108px;
-        align-items: flex-start;
-    }
-}
-
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -689,14 +654,6 @@ pointer-events: auto;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
-}
-
-@media screen and (min-width: 768px) {
-    .modal {
-        width: 408px;
-        height: 584px;
-        padding: 72px 24px 0 24px;
-    }
 }
 
 .btn-modal {
@@ -731,12 +688,6 @@ pointer-events: auto;
 .btn-modal:hover > .svg-modal,
 .btm-modal:focus > .svg-modal {
     fill: #FFFFFF;
-}
-
-@media screen and (min-width: 1158px) {
-    .svg-modal {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
 
 .modal-paragraph {
