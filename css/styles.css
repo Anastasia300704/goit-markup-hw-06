@@ -222,8 +222,16 @@ button {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu.is-open {
+.mobile-menu .is-open {
     transform: translateX(0%);
+}
+
+.mobile-container {
+    padding-top: 72px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .mobile-menu-close-btn {
@@ -250,8 +258,7 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-top: 72px;
-    margin-bottom: 168px;
+    margin-bottom: auto;
 }
 
 .mobile-menu-list {
@@ -318,15 +325,6 @@ button {
 }
 
 
-.hero-container {
-    text-align: center;
-    display: block;
-    justify-content: center;
-    max-width: 320px;
-    padding-top: 72px;
-    padding-bottom: 72px;
-}
-
 .section-hero{
    background-color: #2E2F42;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -334,6 +332,10 @@ button {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+   max-width: 320px;
+    padding-top: 72px;
+        padding-bottom: 72px;
+        margin: 0 auto;
 }
 
 
@@ -348,13 +350,14 @@ button {
 .main-title {
     max-width: 496px;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 72px;
 }
 
 .btn-order-service {
@@ -368,7 +371,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
@@ -385,7 +387,6 @@ button {
 @media screen and (min-width: 768px) {
     .hero-container {
         max-width: 768px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
     }
 }
 
@@ -394,14 +395,10 @@ button {
     (webkit-min-device-pixel-ratio: 2) {
         .section-hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab@2x.jpg);
+padding-top: 112px;
+    padding-bottom: 112px;
         }
     }
-
-   .hero-container {
-       padding-top: 112px;
-       padding-bottom: 112px;
-       max-width: 768px;
-   }
 
    .main-title {
        max-width: 496px;
@@ -414,6 +411,9 @@ button {
             .hero-container {
                 max-width: 1440px;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+                padding-top: 188px;
+                    padding-bottom: 188px;
+                    max-width: 1440px;
             }
         }
     
@@ -423,13 +423,6 @@ button {
                 .section-hero {
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop@2x.jpg);
                 }
-
-                                 .hero-container {
-                                     padding-top: 188px;
-                                     padding-bottom: 188px;
-                                     max-width: 1440px;
-                                 }
-                
                                  .main-title {
                                      margin-bottom: 48px;
                                  }
@@ -464,10 +457,6 @@ button {
 
 
 
-                        .container-benefits-icons {
-                            display: none;
-                        }
-
                         .section-second {
                             padding: 96px 0;
                         }
@@ -490,7 +479,7 @@ button {
 
           .benefits-list-title {
                     font-weight: 700;
-              font-size: 36px;
+              font-size: 20px;
                line-height: 1.11;
                letter-spacing: 0.02em;
               color: #2E2F42;
@@ -498,7 +487,7 @@ button {
 }
                             
          .benefits-list-text {
-            font-weight: 500;
+            font-weight: 400;
            font-size: 16px;
             line-height: 1.5;
           letter-spacing: 0.02em;
@@ -542,6 +531,19 @@ button {
         letter-spacing: 0.02em;
         color: #434455;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-list-items {
+        display: flex;
+        flex-basis: calc((100% - 3 * 24px) / 4);
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 72px 24px;
+        text-align: start;
+    } 
 }
 
 
@@ -649,17 +651,16 @@ button {
 .social-link-team {
     display: flex;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #4d5ae5;
-    border-radius: 50%;
+    gap: 24px;
 }
 
 .social-icons-team {
     fill: #f4f4fd;
 }
 
-.social-link {
+.social-list {
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -975,7 +976,7 @@ button {
 }
 
 .email-label {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -1005,6 +1006,7 @@ button {
 @media screen and (min-width: 768px) {
     .subscribe-paragraph {
         text-align: left;
+        width: 264px;
     }
 }
 
@@ -1287,6 +1289,18 @@ button {
 
 .checkbox-privacy:focus + .label-privacy .span-label {
     outline: 1px solid #404bbf;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .btn-mod {
