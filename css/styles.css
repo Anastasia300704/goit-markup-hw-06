@@ -488,7 +488,7 @@ overflow: hidden;
                                                                           max-width: 320px;
                                                                          }
                                                                          /* .container-benefits-icons {
-                                                                            display: flex;
+                                                                            display: none;
                                                                             align-items: center;
                                                                             justify-content: center;
                                                                             height: 112px;
@@ -541,7 +541,7 @@ overflow: hidden;
 
 @media screen and (min-width: 1158px) {
     .container-benefits-icons {
-        display: none;
+        display: flex;
     }
 
     .container-benefits-icons {
