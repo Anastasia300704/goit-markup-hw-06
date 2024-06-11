@@ -326,30 +326,31 @@ button {
 
 .section-hero{
    background-color: #2E2F42;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   max-width: 320px;
-   height: 432px;
-    padding-top: 72px;
-        padding-bottom: 72px;
-        margin: 0 auto;
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 320px;
+    height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 96px;
+    padding: 72px 0 72px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/people-office.jpg), url(../images/people-office-desktop@2x.jpg);
+                url(../images/people-office.jpg);
 }
 
 .main-title {
-    font-family: "Roboto", sans-serif;
+font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-        text-align: center;
-        margin-bottom: 72px;
-        margin-left: 52px;
-        margin-right: 52px;
-        color: #fff;
+    text-align: center;
+    margin-bottom: 72px;
+    margin-left: 52px;
+    margin-right: 52px;
+    color: #ffffff;
     max-width: 496px;
 }
 
@@ -377,27 +378,29 @@ margin-left: auto;
 .section-hero {
         background-color: #2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-mob.jpg), url(../images/people-office-ob@2x.jpg);
+            url(../images/people-office-mob.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        max-width: 320px;
-        padding-top: 72px;
-        padding-bottom: 72px;
-        margin: 0 auto;
+            background-size: cover;
+            background-position: center;
+            max-width: 320px;
+            height: 432px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 96px;
+            padding: 72px 0 72px;
     }
         .main-title {
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 1.11;
-            letter-spacing: 0.02em;
-            text-align: center;
-            margin-bottom: 72px;
-            margin-left: 52px;
-            margin-right: 52px;
-            color: #fff;
-            max-width: 496px;
+    font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-left: 52px;
+        margin-right: 52px;
+        margin-bottom: 72px;
+        color: #ffffff;
+        max-width: 496px;
         }
                 .btn-order-service {
                     font-family: "Roboto", sans-serif;
@@ -420,13 +423,21 @@ margin-left: auto;
                 }
 }
 
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-ob@2x.jpg);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .section-hero {
         max-width: 768px;
         padding-bottom: 112px;
         padding-top: 112px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-tab.jpg), url(../images/people-office-tab@2x.jpg);
+                url(../images/people-office-tab.jpg);
     }
                 .main-title {
                     font-size: 56px;
@@ -445,6 +456,14 @@ margin-left: auto;
                                 }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-tab@2x.jpg);
+    }
+}
+
   @media screen and (min-width: 1158px) {
       .section-hero {
           max-width: 1440px;
@@ -457,6 +476,14 @@ margin-bottom: 48px;
                font-size: 16px;
                line-height: 1.5;
            }
+  }
+
+  @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+      .section-hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                  rgba(46, 47, 66, 0.7)),
+              url(../images/people-office-desktop@2x.jpg);
+      }
   }
 
 
