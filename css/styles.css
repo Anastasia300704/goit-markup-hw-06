@@ -374,12 +374,11 @@ margin-left: auto;
 .section-hero {
         background-color: #2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-mob.jpg);
+            url(../images/people-office-mob.jpg), url(../images/people-office-ob@2x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         max-width: 320px;
-        height: 432px;
         padding-top: 72px;
         padding-bottom: 72px;
         margin: 0 auto;
@@ -421,9 +420,10 @@ margin-left: auto;
 @media screen and (min-width: 768px) {
     .section-hero {
         max-width: 768px;
-        height: 436px;
         padding-bottom: 112px;
         padding-top: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-tab.jpg), url(../images/people-office-tab@2x.jpg);
     }
                 .main-title {
                     font-size: 56px;
@@ -444,10 +444,10 @@ margin-left: auto;
 
   @media screen and (min-width: 1158px) {
       .section-hero {
-          max-width: 1158px;
-          height: 600px;
+          max-width: 1440px;
         padding-bottom: 188px;
-        margin-bottom: 120px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office.jpg), url(../images/people-office-desktop@2x.jpg);
       }
       .main-title {
 margin-bottom: 48px;
@@ -507,7 +507,7 @@ gap: 72px;
  margin-bottom: 8px;
  }
    .benefits-list-text {
-   font-weight: 500;
+   font-weight: 400;
    font-size: 16px;
     line-height: 1.5;
      letter-spacing: 0.02em;
@@ -517,16 +517,12 @@ gap: 72px;
 .icon-container {
     display: none;
 }
-.container {
-    margin-left: auto;
-        margin-right: auto;
-}
 
 
 @media screen and (min-width: 768px) {
-       /* .section-second {
+        .section-second {
                 margin-bottom: 96px;
-            } */
+            } 
 .benefits-list-title {
     text-align: left;
 }
@@ -543,6 +539,7 @@ gap: 72px;
 @media screen and (min-width: 1158px) {
     .container-benefits-icons {
         display: flex;
+        padding: 120px 0;
     }
 
     .container-benefits-icons {
@@ -558,8 +555,7 @@ gap: 72px;
 
     .benefits-list {
         flex-wrap: nowrap;
-        margin-bottom: 120px;
-    }
+         }
 
     .benefits-list-title {
         font-weight: 500;
@@ -568,7 +564,7 @@ gap: 72px;
     }
 
     .benefits-list-title {
-        font-weight: 400;
+        font-weight: 500;
     }
 }
              
@@ -1015,7 +1011,6 @@ font-family: "Roboto", sans-serif;
 
 @media screen and (min-width: 320px) {
     .bot-line {
-        display: flex;
         padding-top: 96px;
         padding-bottom: 96px;
     }
